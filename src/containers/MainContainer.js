@@ -11,7 +11,8 @@ export default class MainContainer extends React.Component {
   }
 
   componentDidMount(){
-    fetch("http://localhost:3000/cards")
+    // fetch("http://localhost:3000/cards")
+    fetch("https://my-app-api-backend.herokuapp.com/cards")
     .then(resp => resp.json())
     .then(cards => {
       this.setState({
