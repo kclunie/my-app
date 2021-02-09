@@ -1,4 +1,5 @@
 import React from 'react'
+// import Button from 'react-bootstrap/Button';
 import ToDoList from './ToDoList'
 
 class ToDoCard extends React.Component {
@@ -36,6 +37,8 @@ class ToDoCard extends React.Component {
           <input onChange={this.handleListInput} type="text" value ={this.state.input} />
         </form>
         {this.renderLists()}
+        <button type="button">Delete</button>
+        {/* <Button variant="dark" onClick={() => this.props.handleDelete(this.props.city)}>Delete</Button> */}
       </div>
     )
   }
