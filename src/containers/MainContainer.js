@@ -140,7 +140,7 @@ export default class MainContainer extends React.Component {
     return (
       <div className="main-container">
         {/* <ToDoCardContainer cards={this.state.cards} addList={this.addList} handleClickList={this.handleClickList}/> */}
-        <ToDoCardContainer cards={this.state.cards} addList={this.addList} handleClickList={this.handleClickList}/>
+        <ToDoCardContainer cards={this.state.cards} addList={this.addList} deleteCard={this.deleteCard} handleClickList={this.handleClickList}/>
         <CreateCard createNewCard={this.createNewCard}/>
       </div>
     )
