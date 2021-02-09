@@ -132,6 +132,9 @@ export default class MainContainer extends React.Component {
     })
   }
 
+  deleteCard = () => {
+    console.log("ploppy")
+  }
 
   render(){
     return (
