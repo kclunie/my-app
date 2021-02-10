@@ -11,8 +11,8 @@ export default class MainContainer extends React.Component {
   }
 
   componentDidMount(){
-    // fetch("http://localhost:3000/cards")
-    fetch("https://my-app-api-backend.herokuapp.com/cards")
+    //fetch("http://localhost:3000/cards")
+   fetch("https://my-app-api-backend.herokuapp.com/cards")
     .then(resp => resp.json())
     .then(cards => {
       this.setState({
@@ -132,8 +132,27 @@ export default class MainContainer extends React.Component {
     })
   }
 
-  deleteCard = () => {
-    console.log("ploppy")
+  deleteCard = (cardId) => {
+    console.log("got to maincontainer", cardId)
+     fetch(`http://localhost:3000/cards/${cardId}`, { 
+     //fetch(`https://my-app-api-backend.herokuapp.com/cards/${cardId}`, {
+        method: "DELETE",
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        // body: JSON.stringify({
+        //   title: input
+        // })
+      })
+      .then(resp => console.log(resp))
+     // .then(resp => resp.json())
+      // .then(newCard => {
+      //   this.setState({
+      //     cards: [...this.state.cards, newCard]
+      //   })
+      // })
+      console.log(this.state.cards)
   }
 
   render(){
