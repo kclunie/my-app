@@ -29,11 +29,10 @@ class ToDoCard extends React.Component {
     })
   }
 
-//   handleDelete = (city) => {
-//     console.log('a')
-//     this.props.deleteCity(city.id, city.trip_id)
-//     console.log('b')
-// }
+  handleDelete = (card) => {
+    console.log("got to delete function", card)
+    this.props.deleteCard(card.id)
+}
 
   render(){
     return (
@@ -43,7 +42,7 @@ class ToDoCard extends React.Component {
           <input onChange={this.handleListInput} type="text" value ={this.state.input} />
         </form>
         {this.renderLists()}
-        <button type="button" onClick={() => console.log(this.props.card)}>Delete</button>
+        <button type="button" onClick={() => this.handleDelete(this.props.card)}>Delete</button>
         {/* <Button variant="dark" onClick={() => this.props.handleDelete(this.props.city)}>Delete</Button> */}
       </div>
     )
