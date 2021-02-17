@@ -11,8 +11,8 @@ export default class MainContainer extends React.Component {
   }
 
   componentDidMount(){
-    //fetch("http://localhost:3000/cards")
-   fetch("https://my-app-api-backend.herokuapp.com/cards")
+    fetch("http://localhost:3000/cards")
+   //fetch("https://my-app-api-backend.herokuapp.com/cards")
     .then(resp => resp.json())
     .then(cards => {
       this.setState({
@@ -23,8 +23,8 @@ export default class MainContainer extends React.Component {
 
   createNewCard = (input) => {
       console.log(input)
-    // fetch("http://localhost:3000/cards", {
-    fetch("https://my-app-api-backend.herokuapp.com/cards", {
+    fetch("http://localhost:3000/cards", {
+    //fetch("https://my-app-api-backend.herokuapp.com/cards", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
@@ -44,8 +44,8 @@ export default class MainContainer extends React.Component {
   }
 
   addList = (cardId, input) => {
-    // fetch("http://localhost:3000/lists", {
-    fetch("https://my-app-api-backend.herokuapp.com/lists", {
+    fetch("http://localhost:3000/lists", {
+    //fetch("https://my-app-api-backend.herokuapp.com/lists", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
@@ -91,8 +91,8 @@ export default class MainContainer extends React.Component {
       newState = true
     }
 
-    // fetch(`http://localhost:3000/lists/${listId}`, {
-    fetch(`https://my-app-api-backend.herokuapp.com/lists/${listId}`, {
+    fetch(`http://localhost:3000/lists/${listId}`, {
+    //fetch(`https://my-app-api-backend.herokuapp.com/lists/${listId}`, {
       method: "PATCH",
       headers: {
         'Content-Type': 'application/json',
