@@ -152,7 +152,37 @@ export default class MainContainer extends React.Component {
       //     cards: [...this.state.cards, newCard]
       //   })
       // })
-      console.log(this.state.cards)
+
+     
+    //   .then(resp => resp.json())
+    // // .then(function(json){
+    // //     console.log(json)
+    // //   })
+    // .then(newList => {
+
+    //   const newLists = foundCard.lists.map(list => {
+    //     if (list.id === listId){
+    //       return newList
+    //     } else {
+    //       return list
+    //     }
+    //   })
+    //   foundCard.lists = newLists
+
+
+    //   const newCards = this.state.cards.map(card => {
+    //     if (card.id === cardId) {
+    //       return foundCard
+    //     } else {
+    //       return card
+    //     }
+    //   })
+
+    //   this.setState({
+    //     cards: newCards
+    //   })
+    // })
+    console.log(this.state.cards)
   }
 
   render(){
