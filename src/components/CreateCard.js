@@ -17,6 +17,9 @@ class CreateCard extends React.Component {
   handleNewCard = (event) => {
     event.preventDefault()
     this.props.createNewCard(this.state.input)
+    this.setState({
+      input: '',
+  })
   }
 
   render(){
