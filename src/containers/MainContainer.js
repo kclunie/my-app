@@ -154,19 +154,30 @@ export default class MainContainer extends React.Component {
       // })
 
      
-    //   .then(resp => resp.json())
-    // // .then(function(json){
-    // //     console.log(json)
-    // //   })
-    // .then(newList => {
+//new code to use***
 
-    //   const newLists = foundCard.lists.map(list => {
-    //     if (list.id === listId){
-    //       return newList
-    //     } else {
-    //       return list
-    //     }
+   //  .then(resp => resp.json())
+    // .then(function(json){
+    //     console.log(json)
     //   })
+  //   .then(newList => {
+
+  //     const newLists = this.state.cards.map(list => {
+  //       if (list.id !== cardId){
+  //         return newList
+  //       } else {
+  //        // return list
+  //       }
+  //     })
+
+  //          this.setState({
+  //       cards: newLists
+  //     })
+  //  })
+
+    //stop here***
+
+
     //   foundCard.lists = newLists
 
 
@@ -182,8 +193,10 @@ export default class MainContainer extends React.Component {
     //     cards: newCards
     //   })
     // })
+
     console.log(this.state.cards)
   }
+  
 
   render(){
     return (
