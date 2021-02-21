@@ -146,8 +146,10 @@ export default class MainContainer extends React.Component {
         // })
       })
       .then(resp => console.log(resp))
+   //   .then(resp => resp.json())
       window.location.reload(false);
-
+     
+  
 
      
 //new code to use - start here***
