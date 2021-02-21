@@ -148,36 +148,7 @@ export default class MainContainer extends React.Component {
       .then(resp => console.log(resp))
    //   .then(resp => resp.json())
       window.location.reload(false);
-     
-  
-
-     
-//new code to use - start here***
-
-   //  .then(resp => resp.json())
-    // .then(function(json){
-    //     console.log(json)
-    //   })
-  //   .then(newList => {
-
-  //     const newLists = this.state.cards.map(list => {
-  //       if (list.id !== cardId){
-  //         return newList
-  //       } else {
-  //        // return list
-  //       }
-  //     })
-
-  //          this.setState({
-  //       cards: newLists
-  //     })
-  //  })
-
-    //stop here***
-
-
-
-    console.log(this.state.cards)
+      console.log(this.state.cards)
   }
   
 
