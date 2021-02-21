@@ -176,21 +176,6 @@ export default class MainContainer extends React.Component {
     //stop here***
 
 
-    //   foundCard.lists = newLists
-
-
-    //   const newCards = this.state.cards.map(card => {
-    //     if (card.id === cardId) {
-    //       return foundCard
-    //     } else {
-    //       return card
-    //     }
-    //   })
-
-    //   this.setState({
-    //     cards: newCards
-    //   })
-    // })
 
     console.log(this.state.cards)
   }
