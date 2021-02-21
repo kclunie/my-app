@@ -146,10 +146,11 @@ export default class MainContainer extends React.Component {
         // })
       })
       .then(resp => console.log(resp))
-     // .then(resp => resp.json())
+      window.location.reload(false);
+    //  .then(resp => resp.json())
       // .then(newCard => {
       //   this.setState({
-      //     cards: [...this.state.cards, newCard]
+      //     cards: this.state.cards
       //   })
       // })
 
