@@ -141,9 +141,6 @@ export default class MainContainer extends React.Component {
           'Content-Type': 'application/json',
           Accept: 'application/json'
         },
-        // body: JSON.stringify({
-        //   title: input
-        // })
       })
       .then(resp => console.log(resp))
    //   .then(resp => resp.json())
