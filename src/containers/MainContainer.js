@@ -132,6 +132,8 @@ export default class MainContainer extends React.Component {
     })
   }
 
+  //deleting entire card
+  
   deleteCard = (cardId) => {
     console.log("got to maincontainer", cardId)
      fetch(`http://localhost:3000/cards/${cardId}`, { 
