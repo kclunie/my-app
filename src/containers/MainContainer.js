@@ -132,7 +132,7 @@ export default class MainContainer extends React.Component {
     })
   }
 
-  //deleting entire card - and dependents
+  //deleting entire card - and dependencies
 
   deleteCard = (cardId) => {
     console.log("got to maincontainer", cardId)
