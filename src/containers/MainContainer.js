@@ -147,6 +147,7 @@ export default class MainContainer extends React.Component {
       .then(resp => console.log(resp))
    //   .then(resp => resp.json())
       //window.location.reload(false);
+      //can use - window.location.reload(false) - to refresh the page as well as the state change code below.
 
       let filterCards = this.state.cards.filter((card) => {
         return card.id !== cardId;
