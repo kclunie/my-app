@@ -43,7 +43,6 @@ class ToDoCard extends React.Component {
         </form>
         {this.renderLists()}
         <button type="button" onClick={() => this.handleDelete(this.props.card)}>Delete</button>
-        {/* <Button variant="dark" onClick={() => this.props.handleDelete(this.props.city)}>Delete</Button> */}
       </div>
     )
   }
