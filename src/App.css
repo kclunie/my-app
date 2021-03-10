@@ -7,6 +7,10 @@ h1 {
   color: rgb(167, 4, 4);
 }
 
+h4 {
+  font-weight: bold;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
