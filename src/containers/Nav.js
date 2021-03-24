@@ -5,7 +5,7 @@ function Nav () {
       <div className="nav">
         {/* <img className="logo" src="../sample_logo.png" /> */}
         <h1>My ToDo List</h1>
-        <h4>work work work work work</h4>
+        <h5>work work work work work</h5>
       </div>
     )
 }
